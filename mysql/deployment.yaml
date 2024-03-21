@@ -18,7 +18,8 @@ spec:
       - name: app
         image: colesny/mysql
         env:
-        - name: MYSQL_ALLOW_EMPTY_PASSWORD
+        - name: MYSQL_RANDOM_ROOT_PASSWORD
+        - value: " "
         resources:
           requests:
             cpu: 10m
