@@ -19,7 +19,7 @@ spec:
         image: colesny/mysql
         env:
         - name: MYSQL_RANDOM_ROOT_PASSWORD
-        - value: " "
+          value: " "
         resources:
           requests:
             cpu: 10m
