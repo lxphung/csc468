@@ -17,6 +17,8 @@ spec:
       containers:
       - name: app
         image: colesny/mysql
+        env:
+        - name: MYSQL_ALLOW_EMPTY_PASSWORD
         resources:
           requests:
             cpu: 10m
