@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mysql-deployment
+  name: hello-deployment
   labels:
     role: app
 spec:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: DOCKER_USER/DOCKER_APP:BUILD_NUMBER
+        image: colesny/mysql
         resources:
           requests:
             cpu: 10m
